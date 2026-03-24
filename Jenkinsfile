@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run as non-root user for security
-                sh 'sudo -u student-runner ./student_test --gtest_output="xml:report.xml"'
+                sh './student_test --gtest_output="xml:report.xml"'
             }
         }
         
