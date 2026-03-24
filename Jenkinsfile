@@ -15,7 +15,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'g++ -o student_test main.cpp test.cpp -lgtest -lgtest_main -lpthread'
+                sh 'g++ -Dmain=student_main -o student_test main.cpp test.cpp -lgtest -lgtest_main -lpthread'
             }
         }
         
