@@ -26,12 +26,7 @@ pipeline {
             }
         }
         
-        stage('Post-Processing') {
-            steps {
-                sh 'python3 /home/dell/Desktop/educi_-automated-grading-system/parse_results.py report.xml'
-            }
-        }
-    }
+   }
     
     post {
         always {
